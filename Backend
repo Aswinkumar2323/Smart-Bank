@@ -5,10 +5,10 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Setup Web3 provider (Infura endpoint)
+
 const web3 = new Web3(process.env.INFURA_URL);
 
-// ERC20 token contract ABI and address
+
 const contractABI = [ [
 	{
 		"inputs": [
